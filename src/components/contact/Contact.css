@@ -1,0 +1,30 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form textarea {
+  width: 80vw;
+  width: 85%;
+  padding: 1rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 1000px) {
+  .contact-form {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  .contact-form {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .contact-form {
+    margin-top: 4rem;
+  }
+}

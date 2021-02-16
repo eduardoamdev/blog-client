@@ -1,0 +1,97 @@
+.tutorials-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 7rem;
+}
+
+.pink-div {
+  background: rgb(192, 52, 99);
+  height: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#youtube-image {
+  width: 18rem;
+}
+
+@media (min-width: 900px) {
+  #core-image {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 899px) {
+  #core-image {
+    display: none;
+  }
+
+  #youtube-image {
+    width: 17rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .video-element {
+    width: 400px;
+    height: 300px;
+    margin: 30px 20px;
+    border: 5px solid rgb(192, 52, 99);
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1299px) {
+  .video-element {
+    width: 28vw;
+    height: 35vh;
+    margin: 5vh 1.9vw;
+    border: 5px solid rgb(192, 52, 99);
+  }
+}
+
+@media (min-width: 775px) and (max-width: 1049px) {
+  .video-element {
+    width: 40vw;
+    height: 35vh;
+    margin: 5vh 4vw;
+    border: 4px solid rgb(192, 52, 99);
+  }
+}
+
+@media (min-width: 560px) and (max-width: 774px) {
+  .video-element {
+    width: 40vw;
+    height: 35vh;
+    margin: 5vh 3.6vw;
+    border: 4px solid rgb(192, 52, 99);
+  }
+}
+
+@media (min-width: 450px) and (max-width: 559px) {
+  .video-element {
+    width: 75vw;
+    height: 40vh;
+    margin: 5vh 10vw;
+    border: 4px solid rgb(192, 52, 99);
+  }
+}
+
+@media (min-width: 350px) and (max-width: 449px) {
+  .video-element {
+    width: 72vw;
+    height: 35vh;
+    margin: 5vh 10vw;
+    border: 4px solid rgb(192, 52, 99);
+  }
+}
+
+@media (max-width: 349px) {
+  .video-element {
+    width: 80vw;
+    height: 30vh;
+    margin: 4vh 5vw;
+    border: 4px solid rgb(192, 52, 99);
+  }
+}

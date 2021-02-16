@@ -1,0 +1,190 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  background: rgb(116, 116, 196, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-elements {
+  margin: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  margin-left: 4rem;
+  padding: 0.8rem;
+  border: 2px solid rgb(122, 131, 245);
+  background: blue;
+  color: white;
+  transition: 0.3s;
+}
+
+.element-link {
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: rgb(68, 145, 233);
+  border: 2px solid rgb(98, 166, 184);
+}
+
+.burguer-elements {
+  position: fixed;
+  top: 25vh;
+  right: 0;
+  background: rgb(192, 52, 99);
+}
+
+.burguer-elements-link {
+  text-decoration: none;
+  color: white;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+
+.burguer-elements-link:hover {
+  background: white;
+  color: blue;
+}
+
+.articles {
+  right: 0;
+  background: rgb(203, 125, 235);
+}
+
+.projects {
+  right: 0;
+  background: rgb(79, 10, 168);
+}
+
+@media (min-width: 1350px) {
+  .articles {
+    position: fixed;
+    top: 18vh;
+  }
+  .article-link{
+    padding: 2rem 6rem;
+  }
+  .projects {
+    position: fixed;
+    top: 18vh;
+  }
+  .project-link{
+    padding: 2rem 6rem;
+  }
+}
+
+@media (max-width: 1349px) {
+  .articles {
+    position: fixed;
+    top: 15vh;
+  }
+  .article-link{
+    padding: 1.5rem 3rem;
+  }
+  .projects {
+    position: fixed;
+    top: 15vh;
+  }
+  .project-link{
+    padding: 1.5rem 3rem;
+  }
+}
+
+.article-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+
+.article-link:hover {
+  background: white;
+  color: blue;
+}
+
+.project-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+
+.project-link:hover {
+  background: white;
+  color: blue;
+}
+
+.close-button {
+  background: rgb(238, 177, 243);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects-close-button {
+  background: rgb(107, 24, 216);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.projects-close-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 1350px) {
+  .burguer {
+    display: none;
+  }
+  .burguer-elements {
+    display: none;
+  }
+}
+
+@media (max-width: 1349px) {
+  .nav-elements {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .burguer {
+    margin: 1.8rem 2.8rem;
+  }
+
+  .burguer img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .burguer {
+    margin: 1.5rem 2.5rem;
+  }
+
+  .burguer img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

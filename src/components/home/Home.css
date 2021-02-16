@@ -1,0 +1,30 @@
+.title-container {
+  height: 100vh;
+  background: blue;
+}
+
+.main-title {
+  padding-top: 40vh;
+  font-size: 12rem;
+  color: white;
+  text-align: center;
+  background-color: blue;
+}
+
+@media (min-width: 1000px) {
+  .main-title {
+    font-size: 12rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .main-title {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .main-title {
+    font-size: 5rem;
+  }
+}
