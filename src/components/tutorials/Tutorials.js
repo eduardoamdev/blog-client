@@ -16,7 +16,7 @@ class Tutorials extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8081/api/tutorials")
+    fetch("https://eblog-api.herokuapp.com/api/tutorials")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -61,7 +61,7 @@ class Tutorials extends Component {
               })}
             </div>
           </div>
-          <div className="normal-footer dark-blue">
+          <div className="dark-blue">
             <Footer></Footer>
           </div>
         </div>

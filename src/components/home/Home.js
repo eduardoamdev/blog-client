@@ -13,7 +13,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8081/api/personal")
+    fetch("https://eblog-api.herokuapp.com/api/personal")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -42,9 +42,6 @@ class Home extends Component {
           <div className="title-container">
             <h1 className="main-title">{this.state.info.text}</h1>
           </div>
-        </div>
-        <div className="home-footer">
-          <Footer></Footer>
         </div>
       </div>
     );

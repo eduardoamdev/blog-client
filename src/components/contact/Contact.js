@@ -8,18 +8,18 @@ class Contact extends Component {
     super(props);
     this.state = {
       error: null,
-      isLoaded: false
+      isLoaded: false,
     };
   }
 
-  serviceId = {}
+  serviceId = {};
 
-  templateId = {}
+  templateId = {};
 
-  userId = {}
+  userId = {};
 
   componentDidMount() {
-    fetch("http://localhost:8081/api/personal")
+    fetch("https://eblog-api.herokuapp.com/api/personal")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -32,11 +32,11 @@ class Contact extends Component {
           });
           filteredResult.map((element) => {
             if (element.type === "service_id") {
-              this.serviceId = element.text
+              this.serviceId = element.text;
             } else if (element.type === "template_id") {
-              this.templateId = element.text
+              this.templateId = element.text;
             } else {
-              this.userId = element.text
+              this.userId = element.text;
             }
           });
           this.setState({
@@ -56,12 +56,7 @@ class Contact extends Component {
   sendEmail(event) {
     event.preventDefault();
     emailjs
-      .sendForm(
-        this.serviceId,
-        this.templateId,
-        event.target,
-        this.userId
-      )
+      .sendForm(this.serviceId, this.templateId, event.target, this.userId)
       .then(
         (result) => {
           console.log(result.text);
@@ -86,9 +81,6 @@ class Contact extends Component {
               <input type="submit" value="Enviar" className="normal-text" />
             </form>
           </div>
-        </div>
-        <div className="home-footer">
-          <Footer></Footer>
         </div>
       </div>
     );

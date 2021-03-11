@@ -19,7 +19,7 @@ class NavBar extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8081/api/articles")
+    fetch("https://eblog-api.herokuapp.com/api/articles")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -36,7 +36,7 @@ class NavBar extends Component {
           });
         }
       );
-    fetch("http://localhost:8081/api/projects")
+    fetch("https://eblog-api.herokuapp.com/api/projects")
       .then((res) => res.json())
       .then(
         (result) => {

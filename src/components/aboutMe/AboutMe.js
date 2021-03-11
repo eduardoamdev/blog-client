@@ -14,7 +14,7 @@ class AboutMe extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8081/api/personal")
+    fetch("https://eblog-api.herokuapp.com/api/personal")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -46,7 +46,7 @@ class AboutMe extends Component {
               <p className="paragraph normal-text">{this.state.info.text}</p>
             </div>
           </div>
-          <div className="normal-footer dark-blue">
+          <div className="dark-blue">
             <Footer></Footer>
           </div>
         </div>

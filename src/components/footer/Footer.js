@@ -12,7 +12,7 @@ class Footer extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8081/api/personal")
+    fetch("https://eblog-api.herokuapp.com/api/personal")
       .then((res) => res.json())
       .then(
         (result) => {

@@ -15,7 +15,7 @@ class Projects extends Component {
 
   fetching() {
     let id = this.props.match.params.projectId;
-    fetch(`http://localhost:8081/api/project/${id}`)
+    fetch(`https://eblog-api.herokuapp.com/api/project/${id}`)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -57,9 +57,6 @@ class Projects extends Component {
               </p>
             </div>
           </div>
-        </div>
-        <div className="home-footer">
-          <Footer></Footer>
         </div>
       </div>
     );

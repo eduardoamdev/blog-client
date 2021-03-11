@@ -158,13 +158,13 @@ body {
 
 @media (min-width: 400px) and (max-width: 899px) {
   .normal-text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 399px) {
   .normal-text {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 }
 

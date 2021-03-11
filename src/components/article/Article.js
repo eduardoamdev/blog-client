@@ -14,7 +14,7 @@ class Article extends Component {
 
   fetching() {
     let id = this.props.match.params.articleId;
-    fetch(`http://localhost:8081/api/article/${id}`)
+    fetch(`https://eblog-api.herokuapp.com/api/article/${id}`)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -52,7 +52,7 @@ class Article extends Component {
               <p className="paragraph normal-text">{this.state.article.text}</p>
             </div>
           </div>
-          <div className="normal-footer dark-blue">
+          <div className="dark-blue">
             <Footer></Footer>
           </div>
         </div>
