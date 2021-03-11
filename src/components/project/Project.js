@@ -49,7 +49,9 @@ class Projects extends Component {
             <div className="project-container">
               <div className="title-link">
                 <a href={this.state.project.link}>
-                  {this.state.project.link}
+                  <p className="paragraph normal-text">
+                    Enlace al repositorio
+                  </p>
                 </a>
               </div>
               <p className="paragraph normal-text">

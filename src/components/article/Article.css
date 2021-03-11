@@ -33,12 +33,12 @@
 
 @media (min-width: 400px) and (max-width: 949px) {
   .article-title h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 399px) {
   .article-title h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }

@@ -132,6 +132,10 @@ body {
   background: blue;
 }
 
+a {
+  text-decoration: none;
+}
+
 .assistant-container {
   background: blue;
   height: 100vh;

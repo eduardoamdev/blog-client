@@ -1,10 +1,8 @@
 {
-  "name": "blog",
+  "name": "eblog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aos": "^2.3.4",
-    "axios": "^0.21.0",
     "emailjs-com": "^2.6.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

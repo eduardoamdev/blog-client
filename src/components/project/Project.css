@@ -6,9 +6,12 @@
   margin-bottom: 3rem;
 }
 
-.title-link a {
+.title-link a p {
   color: yellowgreen;
-  font-size: 2rem;
+}
+
+.green-text {
+  color: rgb(22, 197, 22);
 }
 
 @media (min-width: 950px) {
