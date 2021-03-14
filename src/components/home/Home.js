@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Footer from "../footer/Footer";
 import "./Home.css";
 
 class Home extends Component {

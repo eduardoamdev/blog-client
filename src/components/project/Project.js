@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Footer from "../footer/Footer";
 import "./Project.css";
 
 class Projects extends Component {
@@ -50,7 +48,7 @@ class Projects extends Component {
               <div className="title-link">
                 <a href={this.state.project.link}>
                   <p className="paragraph normal-text">
-                    Enlace al repositorio
+                    Enlace al repositorio de GitHub
                   </p>
                 </a>
               </div>

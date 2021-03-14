@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Footer from "../footer/Footer";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 
