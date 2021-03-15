@@ -183,9 +183,6 @@ class NavBar extends Component {
             <div onClick={this.hideProjects.bind(this)}>
               {this.state.projects.map((element) => {
                 let project = element;
-                {
-                  console.log(project.name);
-                }
                 return (
                   <Link
                     to={`/project/${project._id}`}
